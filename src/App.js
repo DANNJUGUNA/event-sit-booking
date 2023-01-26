@@ -21,7 +21,7 @@ const handleRerender=(event)=>{
      <Routes>
      
      <Route path='/events' element={<EventsDisplay events={events}/>}/>
-     <Route path='/EventBookForm' element={<EventBookForm />}/>
+     <Route path='/EventBookForm' element={<EventBookForm/>}/>
      <Route path='/addevents' element={<AddEvents addevent={handleRerender}/>}/>
      </Routes>
      
