@@ -8,7 +8,7 @@ function App() {
   const[events,setEvents]=useState([]);
 
 useEffect(()=>{
-      fetch("http://localhost:8000/events")
+      fetch("http://localhost:8000/events?_sort=Date")
      .then((response)=>response.json())
      .then((data)=>setEvents(data))
 },[])
@@ -21,7 +21,7 @@ const handleRerender=(event)=>{
      <Routes>
      
      <Route path='/events' element={<EventsDisplay events={events}/>}/>
-     <Route path='/EventBookForm' element={<EventBookForm/>}/>
+     <Route path='/EventBookForm' element={<EventBookForm />}/>
      <Route path='/addevents' element={<AddEvents addevent={handleRerender}/>}/>
      </Routes>
      
