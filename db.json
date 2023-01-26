@@ -1,28 +1,221 @@
 {
-    "events": [
-        {
-          "EventName": "Concert",
-          "Location": "Safaricom Indoor Arena",
-          "Tate": "01-feb-2023",
-          "Time": "7:00 PM",
-          "Capacity": 10
-        },
-        {
-          "EventName": "Fashion Show",
-          "Location": "KICC",
-          "Date": "01-feb-2023",
-          "Time": "6:00 PM",
-          "Capacity": 30
-        },
-        {
-          "EventName": "Food Festival",
-          "Location": "Uhuru Gardens",
-          "Date": "01-feb-2023",
-          "Time": "12:00 PM",
-          "Capacity": 5
-        }
-        ],
-        "bookings":[
-
-        ]
+  "events": [
+    {
+      "EventName": "Concert",
+      "Location": "Safaricom Indoor Arena",
+      "Tate": "01-feb-2023",
+      "Time": "7:00 PM",
+      "Capacity": 10,
+      "id": 1
+    },
+    {
+      "EventName": "Fashion Show",
+      "Location": "KICC",
+      "Date": "01-feb-2023",
+      "Time": "6:00 PM",
+      "Capacity": 30,
+      "id": 2
+    },
+    {
+      "EventName": "Food Festival",
+      "Location": "Uhuru Gardens",
+      "Date": "01-feb-2023",
+      "Time": "12:00 PM",
+      "Capacity": 5,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "EventName": "Movieshow",
+      "Time": "1:20 pm",
+      "Date": "01-feb-2023",
+      "Location": "western corner",
+      "Capacity": 10
+    },
+    {
+      "id": 5,
+      "EventName": "Agrishow",
+      "Time": "10:00 am",
+      "Date": "01-feb-2023",
+      "Location": "Eastern corner",
+      "Capacity": 15
+    },
+    {
+      "id": 6,
+      "EventName": "Sports Event",
+      "Location": "Moi International Sports Center",
+      "Date": "01-feb-2023",
+      "Time": "4:00 PM",
+      "Capacity": "30"
+    },
+    {
+      "id": 7,
+      "EventName": "Book Fair",
+      "Location": "National Museum of Kenya",
+      "Date": "01-feb-2023",
+      "Time": "11:00 AM",
+      "Capacity": "20"
+    },
+    {
+      "id": 8,
+      "EventName": "Art Exhibition",
+      "Location": "Alliance Francaise",
+      "Date": "01-feb-2023",
+      "Time": "2:00 PM",
+      "Capacity": "15"
+    },
+    {
+      "id": 9,
+      "EventName": "Comedy Night",
+      "Location": "Kasarani Sports Complex",
+      "Date": "01-feb-2023",
+      "Time": "8:00 PM",
+      "Capacity": "40"
+    },
+    {
+      "id": 10,
+      "EventName": "Theatre Play",
+      "Location": "Phoenix Theatre",
+      "Date": "01-feb-2023",
+      "Time": "6:30 PM",
+      "Capacity": "25"
+    },
+    {
+      "id": 11,
+      "EventName": "Dance Performance",
+      "Location": "Kenya National Theatre",
+      "Date": "01-feb-2023",
+      "Time": "7:00 PM",
+      "Capacity": "35"
+    },
+    {
+      "id": 12,
+      "EventName": "Film Screening",
+      "Location": "Nairobi Cinema",
+      "Date": "01-feb-2023",
+      "Time": "9:00 PM",
+      "Capacity": "50"
+    },
+    {
+      "id": 13,
+      "EventName": "Orchestra Concert",
+      "Location": "Goethe Institute",
+      "Date": "01-feb-2023",
+      "Time": "7:30 PM",
+      "Capacity": "40"
+    },
+    {
+      "id": 14,
+      "EventName": "Poetry Slam",
+      "Location": "Michael Joseph Center",
+      "Date": "01-feb-2023",
+      "Time": "6:00 PM",
+      "Capacity": "30"
+    },
+    {
+      "id": 15,
+      "EventName": "Country Music Festival",
+      "Location": "Nairobi Arboretum",
+      "Date": "02-feb-2023",
+      "Time": "2:00 PM",
+      "Capacity": "60"
+    },
+    {
+      "id": 16,
+      "EventName": "Business Summit",
+      "Location": "Serena Hotel",
+      "Date": "03-feb-2023",
+      "Time": "9:00 AM",
+      "Capacity": "100"
+    },
+    {
+      "id": 17,
+      "EventName": "Technology Expo",
+      "Location": "KICC",
+      "Date": "04-feb-2023",
+      "Time": "10:00 AM",
+      "Capacity": "150"
+    },
+    {
+      "id": 18,
+      "EventName": "Eco-Friendly Workshop",
+      "Location": "Karura Forest",
+      "Date": "05-feb-2023",
+      "Time": "2:00 PM",
+      "Capacity": "20"
+    },
+    {
+      "id": 19,
+      "EventName": "Wedding Fair",
+      "Location": "Sarova Stanley Hotel",
+      "Date": "06-feb-2023",
+      "Time": "11:00 AM",
+      "Capacity": "50"
+    },
+    {
+      "id": 20,
+      "EventName": "Health and Wellness Expo",
+      "Location": "KICC",
+      "Date": "07-feb-2023",
+      "Time": "10:00 AM",
+      "Capacity": "100"
+    },
+    {
+      "id": 21,
+      "EventName": "Outdoor Adventure Day",
+      "Location": "Hell's Gate National Park",
+      "Date": "08-feb-2023",
+      "Time": "8:00 AM",
+      "Capacity": "50"
+    },
+    {
+      "id": 22,
+      "EventName": "Pet Adoption Day",
+      "Location": "Nairobi Arboretum",
+      "Date": "09-feb-2023",
+      "Time": "11:00 AM",
+      "Capacity": "30"
+    },
+    {
+      "id": 23,
+      "EventName": "Food and Wine Tasting",
+      "Location": "Tamarind Restaurant",
+      "Date": "10-feb-2023",
+      "Time": "6:00 PM",
+      "Capacity": "40"
+    },
+    {
+      "EventName": "Birthday",
+      "Location": "Nakuru",
+      "Date": "2023-01-26",
+      "Time": "22:00",
+      "Capacity": "10",
+      "id": 25
+    },
+    {
+      "EventName": "MovieShow",
+      "Location": "Nakuru",
+      "Date": "2023-01-26",
+      "Time": "19:28",
+      "Capacity": "7",
+      "id": 26
+    },
+    {
+      "EventName": "Valentine",
+      "Location": "Mombasa",
+      "Date": "2023-02-14",
+      "Time": "06:00",
+      "Capacity": "2",
+      "id": 27
+    },
+    {
+      "EventName": "Birthday",
+      "Location": "Mombasa",
+      "Date": "2023-01-27",
+      "Time": "19:42",
+      "Capacity": "4",
+      "id": 28
+    }
+  ],
+  "bookings": []
 }
