@@ -3,20 +3,34 @@ import { useNavigate } from "react-router-dom";
 
 function AddEvents({addevent}) {
     const navigate = useNavigate();
+    const[seats,setSeats]=useState([])
  const [formData, setFormData]=useState({
           EventName: "",
           Location: "",
           Date: "",
           Time: "",
-          Capacity: 0
+          Capacity: 0,
+          Seats:[...seats]
  })
  const handleOnChange = (event)=> {
     const fieldName=event.target.name;
-    const fieldValue= event.target.value
+    const fieldValue= event.target.value; 
+    let arr=[];
+    let i;
+  const seat=(cap)=>{
+    
+      for(i=0;i<=cap-1;i++){
+          return setSeats(arr.push(i+1))
+      }
+    
+  }
+  seat(event.target.Capacity.value)
     const newFormData={...formData};
     newFormData[fieldName]=fieldValue;
+   
     setFormData(newFormData);
   }
+  
   const handleSubmit=(event)=>{
     event.preventDefault();
     postData(formData)
@@ -35,9 +49,10 @@ function AddEvents({addevent}) {
 setTimeout(() => navigate('/events'), 1000);
     
     }
+    
  return (
    <div >
-     <h1 className='d-grid gap-2 col-8 mx-auto text-white text-center'>WELCOME TO ADD EVENTS PAGE!</h1>
+     <h1 className='d-grid gap-2 col-8 mx-auto text-white text-center'>WELCOME TO ADD EVENTS PAGE</h1>
      <form onSubmit={handleSubmit} className='container col-6 p-2 bg-secondary text-white text-bold rounded-4 
     border border-danger'>
        <div className>
