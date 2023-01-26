@@ -3,7 +3,7 @@
     {
       "EventName": "Concert",
       "Location": "Safaricom Indoor Arena",
-      "Tate": "01-feb-2023",
+      "Date": "01-feb-2023",
       "Time": "7:00 PM",
       "Capacity": 10,
       "id": 1
