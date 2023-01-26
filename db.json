@@ -1,0 +1,28 @@
+{
+    "events": [
+        {
+          "EventName": "Concert",
+          "Location": "Safaricom Indoor Arena",
+          "Tate": "01-feb-2023",
+          "Time": "7:00 PM",
+          "Capacity": 10
+        },
+        {
+          "EventName": "Fashion Show",
+          "Location": "KICC",
+          "Date": "01-feb-2023",
+          "Time": "6:00 PM",
+          "Capacity": 30
+        },
+        {
+          "EventName": "Food Festival",
+          "Location": "Uhuru Gardens",
+          "Date": "01-feb-2023",
+          "Time": "12:00 PM",
+          "Capacity": 5
+        }
+        ],
+        "bookings":[
+
+        ]
+}
