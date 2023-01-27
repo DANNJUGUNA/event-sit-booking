@@ -11,14 +11,14 @@ React, Bootstrap,CSS
 Install the prerequisites(node js,visual studio code or atom ). Fork the repository Clone the repository . Open the terminal and run the command npm install to install the npm modules. run npm run server to run the json sever. Open a new terminal and run npm start to run application. If any change is made commit and push the changes to the github repository.
 
 In the project directory, you can run:
-###'npm run server`
-it runs the port to local host 8000
+## 'npm run server`
+it runs the  json server.
 
-### `npm start`
+## `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:8000] to view it in your browser.
 
-##LICENSE
+## LICENSE
 MIT License Copyright (c) 2022
 
