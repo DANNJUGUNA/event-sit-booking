@@ -16,7 +16,7 @@ const handleRerender=(event)=>{
   setEvents([...events,event])
 }
   return (
-    <div >
+    <div className="container-fluid" >
      <Navbar/>
      <Routes>
      
