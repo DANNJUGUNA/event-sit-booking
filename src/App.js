@@ -16,12 +16,12 @@ const handleRerender=(event)=>{
   setEvents([...events,event])
 }
   return (
-    <div className="container">
+    <div >
      <Navbar/>
      <Routes>
      
      <Route path='/events' element={<EventsDisplay events={events}/>}/>
-     <Route path='/EventBookForm' element={<EventBookForm/>}/>
+     <Route path='/events/:eventid' element={<EventBookForm events={events}/>}/>
      <Route path='/addevents' element={<AddEvents addevent={handleRerender}/>}/>
      </Routes>
      

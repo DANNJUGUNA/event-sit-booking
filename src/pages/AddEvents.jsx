@@ -1,36 +1,42 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function AddEvents({addevent}) {
     const navigate = useNavigate();
-    const[seats,setSeats]=useState([])
+    const [capacity,setCapacity]=useState(0)
+    let seat=[]
+    
+  
  const [formData, setFormData]=useState({
           EventName: "",
           Location: "",
           Date: "",
           Time: "",
-          Capacity: 0,
-          Seats:[...seats]
+          Capacity: 0 
+           
  })
+ const seatsArray=()=>{
+  
+  let i;
+  for(i=0;i<=capacity-1;i++){
+     seat.push(i+1)
+  }
+  return seat
+ }
+useEffect(()=>{
+seatsArray()
+setFormData({...formData,Seats:seat})
+},[capacity])
  const handleOnChange = (event)=> {
     const fieldName=event.target.name;
     const fieldValue= event.target.value; 
-    let arr=[];
-    let i;
-  const seat=(cap)=>{
-    
-      for(i=0;i<=cap-1;i++){
-          return setSeats(arr.push(i+1))
-      }
-    
-  }
-  seat(event.target.Capacity.value)
     const newFormData={...formData};
     newFormData[fieldName]=fieldValue;
-   
     setFormData(newFormData);
   }
-  
+  useEffect(()=>{
+console.log(formData)
+  },[formData])
   const handleSubmit=(event)=>{
     event.preventDefault();
     postData(formData)
@@ -78,8 +84,11 @@ setTimeout(() => navigate('/events'), 1000);
          </div>
          <div>
              <label  className="form-label fw-bolder">CAPACITY</label>
-             <input  onChange={handleOnChange} type="number" min={1}
-             className="form-control form-control-sm" name="Capacity" placeholder="0" required/>
+             <input  onChange={(event)=>{
+              handleOnChange(event)
+              setCapacity(event.target.value)
+             }} type="number" min={1}
+             className="form-control form-control-sm" name="Capacity" value={capacity} placeholder="0" required/>
          </div>
        </div>
        <div className="d-grid gap-2 col-6 mx-auto p-3">

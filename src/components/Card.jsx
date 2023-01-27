@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-function Card({event}) {
+function Card({event,id} ) {
 
   return (
     <div className="card col-2 p-0 m-2 rounded-5 border border-danger mb-7" >
@@ -13,7 +13,7 @@ function Card({event}) {
       <p className="card-text">Location : {event.Location}</p>
       
       
-      <Link  to ='/EventBookForm'
+      <Link  to ={`/events/ ${id}`}
       class="btn btn-success rounded-10 border border-danger d-grid gap-2 col-6 mx-auto p-1">BOOK</Link>
     </div>
   </div>

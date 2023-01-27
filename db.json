@@ -215,6 +215,34 @@
       "Time": "19:42",
       "Capacity": "4",
       "id": 28
+    },
+    {
+      "EventName": "MovieShow",
+      "Location": "Mombasa",
+      "Date": "2023-01-27",
+      "Time": "09:06",
+      "Capacity": "10",
+      "Seats": [],
+      "id": 29
+    },
+    {
+      "EventName": "Birthday",
+      "Location": "Nakuru",
+      "Date": "2023-01-27",
+      "Time": "09:42",
+      "Capacity": "9",
+      "Seats": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "id": 30
     }
   ],
   "bookings": []
