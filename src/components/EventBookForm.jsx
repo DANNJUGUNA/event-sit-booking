@@ -55,8 +55,8 @@ function EventBookForm() {
  </div>
   <div >
     <label  className="form-label fw-bolder">EVENT-NAME</label>
-    <input type="text" name='EventName'  
-     className="form-control"  readOnly required/>
+    <input type="text" onChange={handleOnChange} name='EventName'  
+     className="form-control"  placeholder='eventName' required/>
   </div>
    <div className="d-grid gap-2 col-6 mx-auto p-3">
   <button type="submit" className="btn btn-success text-bolder rounded-4 

@@ -245,5 +245,14 @@
       "id": 30
     }
   ],
-  "bookings": []
+  "bookings": [
+    {
+      "Name": "dan njuguna",
+      "Email": "dan@gmail.com",
+      "SitNumber": 0,
+      "EventName": "",
+      " SitNumber": "4",
+      "id": 1
+    }
+  ]
 }
